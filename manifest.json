@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Gov CSS Modifier",
+  "version": "1.0",
+  "description": "Modify the CSS for Indian government websites.",
+  "host_permissions": ["https://*.gov.in/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.gov.in/*"],
+      "css": ["style.css"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
