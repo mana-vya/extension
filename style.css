@@ -1,0 +1,377 @@
+/* CSS Modifications for Indian Government Websites */
+
+/* Color Scheme - Indian Government Standard Colors */
+:root {
+  --primary-blue: #003366;
+  --secondary-orange: #FF9933;
+  --accent-green: #138808;
+  --white: #FFFFFF;
+  --light-gray: #F5F5F5;
+  --dark-gray: #333333;
+  --text-color: #212121;
+  --border-color: #DCDCDC;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+/* Header Modifications */
+header,
+.header,
+.navbar {
+  background: linear-gradient(to right, var(--primary-blue), var(--primary-blue) 85%, var(--secondary-orange) 85%);
+  color: var(--white);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid var(--secondary-orange);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Links */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-orange);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #663399;
+}
+
+/* Button Styles */
+button,
+.btn,
+input[type="submit"],
+input[type="button"] {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: var(--secondary-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active,
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button */
+.btn-secondary,
+button.secondary {
+  background-color: var(--accent-green);
+}
+
+.btn-secondary:hover,
+button.secondary:hover {
+  background-color: #0d6b06;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--secondary-orange);
+  box-shadow: 0 0 0 3px rgba(255, 153, 51, 0.1);
+}
+
+/* Labels */
+label {
+  color: var(--dark-gray);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Navigation */
+nav,
+.nav {
+  background-color: var(--primary-blue);
+}
+
+nav a,
+.nav a {
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+.nav a:hover {
+  background-color: var(--secondary-orange);
+  color: var(--white);
+}
+
+nav a:visited,
+.nav a:visited {
+  color: var(--white);
+}
+
+/* Alerts/Messages */
+.alert,
+.message,
+.notification {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border-left: 4px solid;
+}
+
+.alert-success,
+.message-success {
+  background-color: #d4edda;
+  color: #155724;
+  border-left-color: var(--accent-green);
+}
+
+.alert-error,
+.message-error,
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-left-color: #dc3545;
+}
+
+.alert-warning,
+.message-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border-left-color: var(--secondary-orange);
+}
+
+.alert-info,
+.message-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border-left-color: var(--primary-blue);
+}
+
+/* Cards/Panels */
+.card,
+.panel,
+.box {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover,
+.panel:hover,
+.box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header,
+.panel-header {
+  border-bottom: 2px solid var(--secondary-orange);
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--light-gray);
+}
+
+/* Footer */
+footer,
+.footer {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer a,
+.footer a {
+  color: var(--secondary-orange);
+}
+
+footer a:hover,
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: var(--light-gray);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+  color: var(--primary-blue);
+}
+
+.breadcrumb span {
+  margin: 0 0.5rem;
+  color: var(--dark-gray);
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header,
+  .header,
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  button,
+  .btn,
+  input[type="submit"],
+  input[type="button"] {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus Styles for Keyboard Navigation */
+:focus-visible {
+  outline: 2px solid var(--secondary-orange);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  header,
+  footer,
+  nav,
+  .no-print {
+    display: none;
+  }
+
+  body {
+    background-color: var(--white);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
